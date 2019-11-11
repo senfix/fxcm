@@ -1,6 +1,8 @@
 package response
 
+import "github.com/senfix/fxcm"
+
 type Unsubscribe struct {
 	Header
-	Pairs string `json:"pairs"`
+	fxcm.Unsubscribe
 }
